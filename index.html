@@ -20,12 +20,16 @@
   </head>
   <header class="headline"><h1 class="slogan">Knowledge Is Power</h1></header>
   <main>
-    <div class="call-to-action">Read A Book</div>
-    <div class="search">
-      <input type="text" name="Find A Book" id="search-box" />
-      <button id="submitButton">Search</button>
+    <h2 class="headline">Read A Book</h1>
+    <form id="book-form">
+      <div class="input">
+        <input type="search" class="books-query">
+        <label for="search">What do you want to read?</label>
+      </div>
+    </form>
+      <button class="btn search">Search</button>
     </div>
-    <div class="book-results"><p id="title"></p></div>
+    <div id="search-results"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="jquery-3.3.1.min.js"></script>
     <script src="app.js"></script>
