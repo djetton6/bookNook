@@ -1,3 +1,25 @@
-container {
+.container {
   display: flex;
+  justify-content: space-between;
+}
+
+nav::after {
+  color: white;
+  background-image: url("https://images.fastcompany.net/image/upload/w_1280,f_auto,q_auto,fl_lossy/wp-cms/uploads/2018/11/p-1-120000-american-libraries-just-got-even-cooler-thanks-to-grow-with-google.jpg");
+}
+
+li {
+  text-underline-position: below;
+  text-decoration: underline;
+  font-size: 125%;
+}
+
+body {
+  background-image: url("https://images.fastcompany.net/image/upload/w_1280,f_auto,q_auto,fl_lossy/wp-cms/uploads/2018/11/p-1-120000-american-libraries-just-got-even-cooler-thanks-to-grow-with-google.jpg");
+}
+
+h1 {
+  text-align: center;
+  color: grey;
+  font-size: 15vh;
 }
