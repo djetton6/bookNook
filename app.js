@@ -11,7 +11,11 @@ $(document).ready(function() {
       let author = "";
       let publisher = "";
 
-      $.get("https://www.googleapis.com/books/");
+      $.get("https://www.googleapis.com/books/v1/volumes?q=" + search, function(
+        response
+      ) {
+        console.log(response);
+      });
     }
   });
   //In case they leave the search query field blank
