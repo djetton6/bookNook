@@ -1,13 +1,10 @@
-// console.log("testing app under construction");
-// let submitButton = document.getElementById("submitButton");
-// let bookResults = document.getElementsByClassName("book-results");
-
-// submitButton.addEventListener("click", testingButton);
-// function testingButton() {
-//   document.getElementById("title").innerHTML = "Hello World";
-// }
-
 $(document).ready(function() {
+  $("#book-form").submit(function() {
+    let search = $("#books-query").val();
+    console.log(search);
+  });
+  //In case they leave the search query field blank
+  return false;
   console.log("Page Loaded");
 
   $("#submitButton").click(function() {
