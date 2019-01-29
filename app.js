@@ -5,16 +5,22 @@ $(document).ready(function() {
     if (search == "") {
       alert("Please enter a book to search");
     } else {
-      //Return all the API elements for
+      console.log("testing");
+      //Return all the API elements for query
       let img = "";
       let title = "";
-      let author = "";
+      let authors = "";
       let publisher = "";
 
       $.get("https://www.googleapis.com/books/v1/volumes?q=" + search, function(
         response
       ) {
         console.log(response);
+        //Loop over JSON to show book properties
+        for(i=0;i<response.items.length;i++)
+        { 
+          
+        }
       });
     }
   });
