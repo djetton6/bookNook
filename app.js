@@ -1,5 +1,6 @@
 $(document).ready(function() {
-  $("#book-form").submit(function() {
+  $("#book-form").submit(function(e) {
+    e.preventDefault();
     let search = $("#books-query").val();
 
     if (search == "") {
@@ -16,10 +17,21 @@ $(document).ready(function() {
         response
       ) {
         console.log(response);
+        const searchResultsDiv = document.querySelector('#search-results');
         //Loop over JSON to show book properties
-        for(i=0;i<response.items.length;i++)
-        { 
-          
+        for (i = 0; i < response.items.length; i++) {
+          const item = response.items[i];
+          const itemDiv = document.createElement('div');
+          itemDiv.innerHTML = `<div>
+                                <h1>${item.volumeInfo.title}</h1>
+                                <img src=${item.volumeInfo.imageLinks.thumbnail} />
+                                ${item.volumeInfo.authors.length &&  '<b>Authors:</b> <ul>' + item.volumeInfo.authors.map(author => {
+                                  return `<li>${author}</li>`;
+                                }).join('') + '</ul>'}
+                                <b>Publisher:</b> ${item.volumeInfo.publisher}
+                                <a target=_blank href=${item.volumeInfo.previewLink} >Learn More...</a>
+                              </div>`;
+          searchResultsDiv.append(itemDiv);
         }
       });
     }
