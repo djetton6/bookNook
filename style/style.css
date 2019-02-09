@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Lato");
+
 .container {
   display: flex;
   justify-content: space-between;
@@ -13,12 +15,14 @@ li {
 body {
   color: white;
   background-image: url("./cover.png");
+  font-family: "Lato", sans-serif;
 }
 
 h1 {
   text-align: center;
-  color: white;
-  font-size: 15vh;
+  color: #ffff00;
+  font-size: 20vh;
+  text-shadow: 2px 4px;
 }
 
 button {
@@ -29,4 +33,15 @@ button {
 #books-query {
   max-width: 50%;
   margin-left: 20px;
+}
+
+#book-title {
+  text-decoration: underline;
+  text-align: left;
+  font-size: 2em;
+}
+
+#books-query {
+  color: white;
+  font-size: 2em;
 }
