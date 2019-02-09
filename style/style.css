@@ -39,6 +39,7 @@ button {
   text-decoration: underline;
   text-align: left;
   font-size: 2em;
+  background-color:black;
 }
 
 #books-query {
