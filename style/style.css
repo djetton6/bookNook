@@ -37,12 +37,29 @@ button {
 
 #book-title {
   text-decoration: underline;
-  text-align: left;
-  font-size: 2em;
-  background-color:black;
+  text-align: center;
+  font-size: 3em;
 }
 
 #books-query {
   color: white;
   font-size: 2em;
+  padding-left: 20%;
+  background-color: black;
+}
+
+.btn search {
+  display: inline-block;
+}
+
+#search-results {
+  font-size: 1em;
+  background: teal;
+  padding-left: 3%;
+}
+
+#more-info {
+  display: inline-block;
+  font-size: 2em;
+  background: black;
 }

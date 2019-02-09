@@ -19,5 +19,8 @@
   "homepage": "https://github.com/djetton6/bookNook#readme",
   "dependencies": {
     "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "qunit": "^2.9.1"
   }
 }
